@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.4.1.min.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -16,7 +17,7 @@
         <div id="section-aside" class="">
             <div id="" class="">
                 <section>
-                    <form action="" id="formulario" method="post">
+                    <form action="" id="formulario" method="POST">
                         <div id="table-usuario">
                             <table>
                                 <td>
@@ -38,6 +39,22 @@
                                     </tr>
                                     <tr>
                                         <th>
+                                            <label for="" id="" class="">Nacionalidad</label>
+                                        </th>
+                                        <th>
+                                            <select id="nacionalidades" name="txt_nacionalidad"></select>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <label for="" id="" class="">Usuario</label>
+                                        </th>
+                                        <th>
+                                            <input type="text" name="txt_usuario">
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>
                                             <label for="" id="" class="">Password</label>
                                         </th>
                                         <th>
@@ -47,8 +64,7 @@
                                     </tr>
                                     <tr>
                                         <th>
-                                            <input type="submit" id="enviar" value="Agregar">
-                                            <input type="submit" id="cancelar" value="Cancelar">
+                                            <button type="submit" id="enviar">Enviar</button>
                                         </th>
                                     </tr>
                                 </td>
@@ -57,20 +73,13 @@
                     </form>
                 </section>
             </div>
-            <br>
-            <hr>
-            <div id="aside" class="">
-                <aside>
-                    <p>Respuesta:</p><br>
-                    <p class="respuesta"></p>
-                </aside>
-            </div>
         </div>
         <div id="footer" class="">
             <footer></footer>
         </div>
     </div>
-    <script src="jquery-3.4.1.min.js"></script>
+    
     <script src="index.js"></script>
+    <script src="nacionalidades.js"></script>
 </body>
 </html>

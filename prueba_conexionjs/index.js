@@ -1,17 +1,19 @@
 $(document).ready(function(){
-    $("#formulario").bind("submit",function(){
-        var enviar=$("#enviar");
-        $.ajax({
-            type:$(this).attr("method"),
-            url:$(this).attr("action"),
-            data:$(this).serialize(),
-            success:function(data){
-                $(".respuesta").html($nombres);
-            },
-            error:function(){
-                alert("error al tratar de enviar el formulario");
+    $('#enviar').click(function(){
+      var datos = $('#formulario').serialize();
+      alert (datos); 
+      $.ajax({
+        type: "POST",
+        url: "index.php",
+        data: datos,
+        success:function(r){
+            if (r == 1){
+                alert ('Datos ingresados con exito');
+            }else{
+                alert ('Fallo el server');
             }
-        })
-        return false;
-    })
+        }
+      });
+      return false; 
+    });
 })
