@@ -1,0 +1,17 @@
+img {
+    max-width: 100%;
+  }
+.card{
+    width: 230px;
+    box-shadow: 1px 1px 4px 1px #888;
+    border-radius: 3px;
+    background-color: white;   
+    overflow: hidden;
+
+}
+button{
+    margin: 0.5em;
+}
+p{
+    padding: 1em;
+}
