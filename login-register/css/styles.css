@@ -19,7 +19,26 @@ body{
     color: #fff;
     border-radius:  10px;
     padding: 40px;
+    position: relative;
 }
 .contenedor-form .toggle{
-    
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    line-height: 25px;
+    text-align: center;
+    border-top: 2px solid #ff851b;
+    border-bottom: 2px solid #ff851b;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+.contenedor-form .toggle span{
+    letter-spacing: 1px;
+}
+.contenedor-form .toggle:hover {
+    border-top: 2px solid #0075d9;
+    border-bottom: 2px solid #0075d9;
 }
