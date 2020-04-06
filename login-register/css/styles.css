@@ -18,7 +18,7 @@ body{
     margin: 48px auto;
     color: #fff;
     border-radius:  10px;
-    padding: 40px;
+    /* padding: 40px; */
     position: relative;
 }
 .contenedor-form .toggle{
@@ -90,8 +90,21 @@ body{
 }
 .contenedor-form .reset-password{
     background: #0075d9;
-    color: #fff;
     width: 100%;
     padding: 15px 0;
     text-align: center;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.contenedor-form .reset-password a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+.contenedor-form .formulario{
+    padding: 40px;
+    display: none;
+}
+.contenedor-form .formulario:nth-child(2){
+    display: block;
 }
