@@ -1,0 +1,35 @@
+.container-fluid{
+    background: #dff1d9;
+}
+.header{
+    border: black 3px solid;
+    border-radius: 15px;
+    text-align: center;
+}
+.header header img {
+    width: 100px;
+    height: 90px;
+    border-radius: 15px;
+    background-image: url(../../img/logo.png);
+}
+/* ------------NAV/MENU------------------- */
+.nav{
+    border: black 3px solid;
+    border-radius: 15px;
+}
+nav #menu li{
+    display: inline-block;
+}
+nav #menu #lisubmenu #submenu li{
+    display: none;
+} 
+nav #menu #lisubmenu:hover #submenu li{
+    display: table;
+}
+nav{
+    text-align: right;
+}
+
+
+    
+   /* -----------------FIN-NAV-MENU------------------------- */
