@@ -1,4 +1,4 @@
-.container-fluid{
+body{
     background: #dff1d9;
 }
 .header{
@@ -16,11 +16,11 @@
 }
 .header #btn_inicio{
     border-radius: 15px;
-    margin: 1em auto;
+    margin: 0.5em auto;
 }
 .buscar #txt_buscar{
     border-radius: 15px;
-    width: 500px;
+    width: 350px;
     margin: 0.5em auto;
 }
 .buscar #btn_buscar{
@@ -31,8 +31,7 @@
 .nav{
     border: black 3px solid;
     border-radius: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0.5em auto;
 }
 /* Borramos el estilo de lista  */
 #menu ul{
@@ -74,6 +73,64 @@
 /* Desplegamos el submenu al pasar por la etiqueta <li> que lo contiene */
 #menu ul li:hover > ul{
     display: block;
+    z-index: 1;
+
 }
     
    /* -----------------FIN-NAV-MENU------------------------- */
+    /* -----------------MENU-SECTION------------------------ */
+section{
+    border: black 3px solid;
+    border-radius: 15px;
+}
+section ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+section ul a{
+    display: block;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 10px;
+    letter-spacing: 1px;
+}
+section ul li p{
+    text-transform: uppercase;
+    font-size: 20px;
+    width: 50%;
+}
+section ul li{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+}
+section ul li:hover{
+    background: rgba(0,0,0, 50%);
+}
+section ul ul{
+    display: none;
+    width: 300px;
+}
+section ul ul li{
+    float: none;
+    width: 150px;
+    left: 0;
+    padding: 0;
+}
+section ul li:hover > ul{
+    display: inline-block;
+}
+/* -----------------FIN-MENU-SECTION------------------------- */
+/* -----------------SECTION-GRID----------------------------- */
+
+/* -----------------FIN-SECTION-GRID--------------------------*/
+/* ---------------------IMAGENES-BLOQUES---------------------- */
+section ul li div img{
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+}
+/* -----------------FIN-IMAGENES-BLOQUES---------------------- */

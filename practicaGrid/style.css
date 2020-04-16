@@ -1,0 +1,17 @@
+.grid{
+    display: grid;
+    grid-template-columns: 50px 300px;
+    grid-template-rows: 200px 75px;
+}
+.a{
+    background: red;
+}
+.b{
+    background: blue;
+}
+.c{
+    background: yellow;
+}
+.d{
+    background: orangered;
+}
