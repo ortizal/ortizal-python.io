@@ -85,8 +85,10 @@ section{
 }
 section ul{
     list-style: none;
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
+    border:red 2px solid;
+    text-align: center;
 }
 section ul a{
     display: block;
@@ -100,6 +102,7 @@ section ul li p{
     text-transform: uppercase;
     font-size: 20px;
     width: 50%;
+    border:green 2px solid;
 }
 section ul li{
     position: relative;
@@ -124,8 +127,15 @@ section ul li:hover > ul{
     display: inline-block;
 }
 /* -----------------FIN-MENU-SECTION------------------------- */
-/* -----------------SECTION-GRID----------------------------- */
 
+/* -----------------SECTION-GRID----------------------------- */
+section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+section div{
+    margin: 0.5em;
+}
 /* -----------------FIN-SECTION-GRID--------------------------*/
 /* ---------------------IMAGENES-BLOQUES---------------------- */
 section ul li div img{
