@@ -54,6 +54,7 @@ body{
     float: right;
     margin: 0;
     padding: 0;
+    border-radius: 15px;
 }
 /* Damos efecto de color al pasar el cursor por cada celda */
 #menu ul li:hover{
@@ -82,12 +83,12 @@ body{
 section{
     border: black 3px solid;
     border-radius: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
 }
 section ul{
     list-style: none;
-    /* margin: 0;
-    padding: 0; */
-    border:red 2px solid;
     text-align: center;
 }
 section ul a{
@@ -102,16 +103,14 @@ section ul li p{
     text-transform: uppercase;
     font-size: 20px;
     width: 50%;
-    border:green 2px solid;
 }
 section ul li{
     position: relative;
-    margin: 0;
-    padding: 0;
     width: 300px;
+    border-radius: 15px;
 }
 section ul li:hover{
-    background: rgba(0,0,0, 50%);
+    background: rgba(75, 74, 74, 0.3);
 }
 section ul ul{
     display: none;
@@ -129,10 +128,6 @@ section ul li:hover > ul{
 /* -----------------FIN-MENU-SECTION------------------------- */
 
 /* -----------------SECTION-GRID----------------------------- */
-section{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
 section div{
     margin: 0.5em;
 }
@@ -144,3 +139,7 @@ section ul li div img{
     border-radius: 15px;
 }
 /* -----------------FIN-IMAGENES-BLOQUES---------------------- */
+.article{
+    border: black 3px solid;
+    border-radius: 15px;
+}
