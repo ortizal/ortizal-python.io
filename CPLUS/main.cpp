@@ -1,6 +1,14 @@
 #include <iostream>
 using namespace std;
 
-int main(){
-    cout << "hola 1\n" ;
+int man(){
+    cout << "I am taking"
+    << "CS 124" 
+    << " this semester\n";
+
+    cin.ignore();
+    
+    cin.get();
+
+    return 0;
 }
