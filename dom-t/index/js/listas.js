@@ -4,7 +4,7 @@ $('#restaurante').click(function(){
         url:'../php/listasRestaurantes.php'             
     })
     .done(function(lista){
-        //setTimeout("location.href='../../catalogo/html/catalogo.html'");
+        setTimeout("location.href='../../catalogo/html/catalogo.html'");
         $('#listado').html(lista);
     })
     .fail(function(){
