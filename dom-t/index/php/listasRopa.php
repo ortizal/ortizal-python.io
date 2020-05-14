@@ -1,6 +1,6 @@
 <?php 
     require_once '../../conexion/php/conexion.php';
-    function get_listas(){
+    function get_listasRopa(){
         $conn = getConn();   
         $query = 'SELECT * FROM almacenropa';
         $resultado = $conn->query($query);
@@ -8,5 +8,4 @@
             echo "$row[nombre]</br>";
         }
     }
-    echo get_listas();  
 ?>
