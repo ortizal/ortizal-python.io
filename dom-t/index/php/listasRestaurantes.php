@@ -2,11 +2,11 @@
     require_once '../../conexion/php/conexion.php';
     function get_listas(){
         $conn = getConn();   
-        $query = 'SELECT * FROM restaurate';
+        $query = 'SELECT * FROM restaurante';
         $resultado = $conn->query($query);
         while ( $row = $resultado->fetch_array(MYSQLI_ASSOC)){
-            echo "<p><a>$row[nombre]</a></p></br>";
-        }
+           echo $message = "<p>$row[nombre]</p></br>";
+        }    
     }
-    echo get_listas();  
+    
 ?>

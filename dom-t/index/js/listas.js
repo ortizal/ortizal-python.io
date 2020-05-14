@@ -18,8 +18,8 @@ $('#almacenRopa').click(function(){
         url:'../php/listasRopa.php'             
     })
     .done(function(lista){
-        //setTimeout("location.href='../../catalogo/html/catalogo.html'");
-        $('#listado').html(lista);
+        setTimeout("location.href='../../catalogo/html/catalogo.html'");
+        //$('#listado').html(lista);
     })
     .fail(function(){
         alert('Error en cargar las listas');
