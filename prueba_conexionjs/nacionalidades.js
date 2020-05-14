@@ -4,9 +4,9 @@ $(document).ready(function(){
         url:'nacionalidades.php'             
     })
     .done(function(lista_nacionalidades){
-        $('#nacionalidades').html(lista_nacionalidades)    
+        $('#listado').html(lista_nacionalidades);
     })
     .fail(function(){
-        alert('Error en cargar las listas')
+        alert('Error en cargar las listas');
     })
 })
