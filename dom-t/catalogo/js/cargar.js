@@ -1,15 +1,28 @@
 $(document).ready(function(){
-  datos = '../../index/php/listasRestaurantes.php';
   $.ajax({
     type:'POST',
-    url:'../php/listar.php',
-    data:datos,
-    success:function(lista){
-      if(r == 1){
-          $('#listado').html(lista);
-      }else{
-            alert ("error");
-      }    
-    }
-  })
+    url:'../php/listarRestaurante.php'             
 })
+.done(function(lista){
+    $('#listado').html(lista);
+})
+.fail(function(){
+    alert('Error en cargar las listas');
+})
+return false;
+});
+
+
+$(document).ready(function(){
+$.ajax({
+  type:'POST',
+  url:'../php/listarRopa.php'             
+})
+.done(function(lista){
+  $('#listado').html(lista);
+})
+.fail(function(){
+  alert('Error en cargar las listas');
+})
+return false;
+});

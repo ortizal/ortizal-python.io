@@ -5,7 +5,7 @@
         $query = 'SELECT * FROM almacenropa';
         $resultado = $conn->query($query);
         while ( $row = $resultado->fetch_array(MYSQLI_ASSOC)){
-            echo "$row[nombre]</br>";
+            echo "<p>$row[nombre]</p></br>";
         }
     }
 ?>
